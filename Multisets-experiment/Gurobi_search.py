@@ -118,16 +118,16 @@ def find_multiset_gurobi(n, v_dict, m):
     return mu_sol, d_sol, zeros
 
 if __name__ == "__main__":
-    # Example usage for n=4
-    n = 4
+    # Example usage
+    n = 8
     v_dict = {}
-    m = n 
-    for i in range(1,16):
-        if i == 8:
-            v_dict[i]=m-2
-            continue
-        v_dict[i]= m-1
-        
+    m = n+1 
+#     for i in range(1,32):
+#         if i == 20:
+#             v_dict[i]=m-2
+#             continue
+#         v_dict[i]= m-1
+    v_dict = {1:1}
     
    
     check_all_ones(n, v_dict, m)
