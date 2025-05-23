@@ -122,12 +122,12 @@ if __name__ == "__main__":
     n = 8
     v_dict = {}
     m = n+1 
-#     for i in range(1,32):
+#     for i in range(1,256):
 #         if i == 20:
 #             v_dict[i]=m-2
 #             continue
 #         v_dict[i]= m-1
-    v_dict = {1:1}
+    v_dict = {1:1, 2:1, 12:1, 143:2}
     
    
     check_all_ones(n, v_dict, m)
